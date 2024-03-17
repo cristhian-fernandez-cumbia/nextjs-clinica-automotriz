@@ -13,7 +13,7 @@ const Menu: React.FC = () => {
                     </svg>
                 </button>
                 {showMenu && (
-                    <ul className="absolute top-24 left-0 bg-black text-white w-full py-6 px-12 rounded shadow-lg animate-slideDown duration-3000">
+                    <ul className="absolute top-24 left-0 bg-black text-white w-full py-6 px-12 rounded shadow-lg animate-slideDown duration-3000 z-10">
                         <MenuItem text="Servicios"/>
                         <MenuItem text="Marcas" />
                         <MenuItem text="Recomendaciones" />
