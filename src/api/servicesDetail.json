@@ -1,0 +1,12 @@
+{
+  "data": {
+      "servicesDetail": [
+          {
+              "idServiceDetail": 0,
+              "name": "Diagnóstico Mecánico y Electrónico Avanzad",
+              "urlImagen": "",
+              "active": true
+          }
+      ]
+  }
+}

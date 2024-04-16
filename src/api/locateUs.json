@@ -1,0 +1,34 @@
+{
+  "data" : {
+      "locateUs": [
+          {
+              "idLocal": 1,
+              "urlImagen": "/assets/images/sede_chorrillos_clinica_automotriz.png",
+              "description": "",
+              "district": "Chorillos",
+              "address": "Jr. Teniente Carlos Jimenez Chavez 339A",
+              "horary": [
+                "L-S: 09:00 a 13:00 hrs",
+                "L-S: 14:00 a 20:00 hrs"
+              ],
+              "phone": "",
+              "cellphone": "+51 941 605 353",
+              "active": true
+          },
+          {
+              "idLocal": 2,
+              "urlImagen": "/assets/images/sede_olivos_clinica_automotriz.png",
+              "description": "",
+              "district": "Los Olivos",
+              "address": "Calle Santa Angélica 216",
+              "horary": [
+                "L-S: 09:00 a 13:00 hrs",
+                "L-S: 14:00 a 20:00 hrs"
+              ],
+              "phone": "",
+              "cellphone": "+51 941 605 353",
+              "active": true
+          }
+      ]
+  }
+}

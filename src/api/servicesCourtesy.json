@@ -1,0 +1,22 @@
+{
+  "data": {
+    "title": "NUESTROS CLIENTES NOS PREFIEREN POR",
+    "subtitle": "SERVICIO DE CORTESÍA",
+    "servicesCourtesy": [
+        {
+            "idService": 0,
+            "title": "Pintado de Calipers",
+            "subtitle": "*INCLUDO SOLO PARA MM +AF",
+            "urlImagen": "/assets/images/pintado_clinica_automotriz.png",
+            "active": true
+        },
+        {
+            "idService": 0,
+            "title": "Lavado, Aspirado y Perfumado",
+            "subtitle": "*INCLUDO SOLO PARA MM +AF",
+            "urlImagen": "/assets/images/lavado_clinica_automotriz.png",
+            "active": true
+        }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "data": {
+      "services": [
+          {
+              "idService": 0,
+              "name": "Fallas",
+              "urlImagen": "",
+              "active": true,
+              "items":[
+                0
+              ]
+          },
+          {
+              "idService": 1,
+              "name": "Mantenimiento",
+              "urlImagen": "",
+              "active": true,
+              "items":[
+                1, 2
+              ]
+          },
+          {
+              "idService": 2,
+              "name": "Undercoating",
+              "urlImagen": "",
+              "active": true,
+              "items":[]
+          },
+          {
+              "idService": 3,
+              "name": "Lavado",
+              "urlImagen": "",
+              "active": true,
+              "items":[]
+          }
+      ]
+  }
+}

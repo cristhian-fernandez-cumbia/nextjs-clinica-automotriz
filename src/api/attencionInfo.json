@@ -1,0 +1,33 @@
+{
+  "data" : {
+      "attentions": [
+          {
+              "idAttention": 1,
+              "urlImagen": "/assets/images/sala_clinica_automotriz.png",
+              "description": "",
+              "title": "Sala de espera",
+              "subtitle": "Moderna",
+              "color": "red",
+              "active": true
+          },
+          {
+              "idAttention": 2,
+              "urlImagen": "/assets/images/atencion_clinica_automotriz.png",
+              "description": "",
+              "title": "Atención",
+              "subtitle": "Personalizada",
+              "color": "yellow",
+              "active": true
+          },
+          {
+              "idAttention": 3,
+              "urlImagen": "/assets/images/reportes_clinica_automotriz.png",
+              "description": "",
+              "title": "Reportes",
+              "subtitle": "En tiempo real",
+              "color": "green",
+              "active": true
+          }
+      ]
+  }
+}

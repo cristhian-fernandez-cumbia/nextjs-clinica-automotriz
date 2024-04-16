@@ -1,0 +1,8 @@
+export { default as FacebookIcon } from './FacebookIcon'
+export { default as WhatsappIcon } from './WhatsappIcon'
+export { default as InstagramIcon } from './InstagramIcon'
+export { default as LinkedinIcon } from './LinkedinIcon'
+export { default as TiktokIcon } from './TiktokIcon'
+export { default as ArrowDownTriangle } from './ArrowDownTriangle'
+export { default as ArrowLeftBold } from './ArrowLeftBold'
+export { default as ArrowRightBold } from './ArrowRightBold'

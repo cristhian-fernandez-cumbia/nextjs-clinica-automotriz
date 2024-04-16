@@ -1,5 +1,7 @@
+'use client'
 import React from 'react'
 import styles from './../../styles/banner.module.css';
+import Maintenance from '../form/maintenance/Maintenance';
 
 const Banner = () => {
   const onClick = ()=>{
@@ -7,19 +9,17 @@ const Banner = () => {
     window.open(urlWhatsapp);
   }
   return (
-    <div className={`${styles.image_banner} relative flex items-center justify-center flex-col lg:flex-row py-44`}>
-      <div className='mx-10 text-white'>
-        <h1 className="text-5xl md:text-5xl font-bold">NO PAGUES MÁS SIN ANTES ENCONTRAR LA FALLA EN TU VEHÍCULO</h1>
-        <p className='text-2xl mt-2'>En Clínica Automotriz somos especialistas en diagnóstico, reparación y mantenimiento.</p>
-      </div>
-      <div className='mx-10 rounded-tr-2xl rounded-bl-2xl bg-black mt-5 text-white p-8 text-center'>
-        <h2 className='text-xl font-bold mb-2'>¿QUIERES CONSERVAR LA VIDA ÚTIL DE TU VEHÍCULO?</h2>
-        <p className='text-lg mb-2'>¡Genial!, Dale clic al botón y agenda tu cita.</p>
-        <button 
-          className="bg-red-600 text-white px-4 py-2 rounded-tr-2xl rounded-bl-2xl hover:text-red-600 hover:bg-white font-bold"
-          onClick={onClick}
-        >Agendar cita</button>
-      </div>
+    <div className={`${styles.image_banner} relative flex items-center lg:items-start justify-between flex-col-reverse lg:flex-row lg:py-44 px-8 md:px-12 lg:px-24 xl:px-36 2xl:px-44 mt-[70px] lg:mt-0`}>
+      <Maintenance/>
+      <h2 className='text-center text-[24px] lg:text-right lg:text-[32px] w-[380px] 2xl:text-[40px] 2xl:w-[480px]  font-bold text-white z-10 leading-8 lg:leading-10 2xl:leading-[3rem] pt-10 mb-12 lg:pt-0  lg:mb-0'>
+        <div className='lg:hidden'>
+          <div>TEN EL <span className='text-red-500'>CONTROL</span></div> DE LA <span className='text-red-500'>VIDA</span> DE TU VEHÍCULO
+        </div>
+        <div className='hidden lg:block'>
+          TEN EL <span className='text-red-500'>CONTROL</span>DE LA <span className='text-red-500'>VIDA</span> DE TU VEHÍCULO
+        </div>
+
+      </h2>
     </div>
   )
 }

@@ -1,0 +1,70 @@
+{
+  "data": {
+      "urlImagen": "/assets/images/banner_clinica_automotriz_03.png",
+      "logos": [
+          {
+            "idLogo": 0,
+            "name": "Nissan",
+            "urlImagen": "/assets/images/logo_nissan.png",
+            "randomStart": 85,
+            "randomEnd": 90,
+            "color": "green",
+            "active": true
+          },
+          {
+            "idLogo": 1,
+            "name": "Nissan",
+            "urlImagen": "/assets/images/logo_nissan.png",
+            "randomStart": 80,
+            "randomEnd": 82,
+            "color": "green",
+            "active": true
+          },
+          {
+            "idLogo": 2,
+            "name": "Nissan",
+            "urlImagen": "/assets/images/logo_nissan.png",
+            "randomStart": 30,
+            "randomEnd": 50,
+            "color": "orange",
+            "active": true
+          },
+          {
+            "idLogo": 3,
+            "name": "Nissan",
+            "urlImagen": "/assets/images/logo_nissan.png",
+            "randomStart": 60,
+            "randomEnd": 75,
+            "color": "yellow",
+            "active": true
+          },
+          {
+            "idLogo": 4,
+            "name": "Nissan",
+            "urlImagen": "/assets/images/logo_nissan.png",
+            "randomStart": 65,
+            "randomEnd": 75,
+            "color": "yellow",
+            "active": true
+          },
+          {
+            "idLogo": 5,
+            "name": "Nissan",
+            "urlImagen": "/assets/images/logo_nissan.png",
+            "randomStart": 10,
+            "randomEnd": 30,
+            "color": "red",
+            "active": true
+          },
+          {
+            "idLogo": 6,
+            "name": "Nissan",
+            "urlImagen": "/assets/images/logo_nissan.png",
+            "randomStart": 75,
+            "randomEnd": 80,
+            "color": "green",
+            "active": true
+          }
+      ]
+  }
+}
