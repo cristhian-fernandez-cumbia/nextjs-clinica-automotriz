@@ -2,9 +2,113 @@
   "data": {
       "servicesDetail": [
           {
-              "idServiceDetail": 0,
-              "name": "Diagnóstico Mecánico y Electrónico Avanzad",
-              "urlImagen": "",
+              "idServiceDetail": 1,
+              "name": "REV. GENERAL",
+              "fullname": "Revisión General",
+              "idService": 1,
+              "urlImagen": "/assets/services/REV_GENERAL_automotriz.png", 
+              "main": false,
+              "label": "",
+              "description": "<p>(Servicio con equipo de última generación)</p></br><ul style='list-style:disc; margin-left:20px'><li>La revisión general se comprobará los diferentes elementos del vehículo, es decir, se examina todo, desde el motor hasta los neumáticos, pasando por las escobillas del limpiaparabrisas o las luces.</li><li>Así conoces el estado real de tu unidad, identificando las fallas actuales y previniendo futuras.</li></ul></br><p>SIN COSTO ALGUNO:</p><ul style='list-style:disc; margin-left:20px'><li>LAVADO y ASPIRADO BÁSICO interno y externo del vehículo.</li><li>LIMPIEZA Y AROMATIZACIÓN de cabina</li></ul>",
+              "active": true
+          },
+          {
+              "idServiceDetail": 2,
+              "name": "REV. ESPECÍFICA",
+              "fullname": "Revisión Específica",
+              "idService": 1,
+              "urlImagen": "/assets/services/REV_ESPE_automotriz.png",
+              "main": false,
+              "label": "",
+              "description": "<p> (SERVICIO CON EQUIPO DE ÚLTIMA GENERACIÓN) </p></br><ul style='list-style:disc; margin-left:20px'> <li>Consiste en encontrar la falla de un problema específico que reconoces en tu vehículo. </li><li>Se entrega un informe de lo que realmente necesitas para solucionarlo. </li></ul></br><p>SIN COSTO ALGUNO: </p><ul style='list-style:disc; margin-left:20px'><li>LAVADO y ASPIRADO BÁSICO interno y externo del vehículo. </li><li>LIMPIEZA Y AROMATIZACIÓN de cabina. </li></ul>",
+              "active": true
+          },
+          {
+              "idServiceDetail": 3,
+              "name": "DIAGNÓSTICO",
+              "fullname": "Diagnóstico Mecánico y Electrónico Avanzado",
+              "idService": 1,
+              "urlImagen": "/assets/services/diagnostico_automotriz.jpeg",
+              "main": false,
+              "label": "",
+              "description": "<p>(SERVICIO CON EQUIPO DE ÚLTIMA GENERACIÓN)</p></br><ul style='list-style:disc; margin-left:20px'><li>Encontramos fallas con complejidad y se emplean conocimientos técnicos con equipos profesionales de alta gamma. </li><li>Se realizan pruebas de ruta antes y después para poder determinar la falla. </li><li>El diagnóstico se paga siempre y cuando el taller dé con la falla con precisión. </li></ul></br><p>NOTA</p><ul style='list-style:disc; margin-left:20px'><li>No cobramos ningún tipo de adelanto hasta terminar con el servicio de diagnóstico. </li></ul>",
+              "active": true
+          },
+          {
+              "idServiceDetail": 4,
+              "name": "MTTO MENOR",
+              "fullname": "Mantenimiento Menor",
+              "idService": 2,
+              "urlImagen": "/assets/services/M_MENOR_automotriz.jpeg",
+              "main": false,
+              "label": "",
+              "description": "<p>El servicio menor es recomendable realizarlo cada 5,000 KM, es un mantenimiento básico para un control de: </p><ul style='list-style:disc; margin-left:20px'><li>Cambio de aceite LIQUI MOLY</li><li>Cambio de filtro de aceite y de aire</li><li>Cambio de arandela de cárter</li><li>Escaneo con software original</li><li>Verificación de calidad de líquido de frenos</li><li>Limpieza de motor con desengrasante dieléctrico</li></ul></br><p>SIN COSTO ALGUNO: </p><ul style='list-style:disc; margin-left:20px'><li>Lavado básico, aspirado y perfumado interno y externo. </li><li>Rellenado de shampoo y refrigerante. </li> </ul>",
+              "active": true
+          },
+          {
+              "idServiceDetail": 5,
+              "name": "MTTO MAYOR",
+              "fullname": "Mantenimiento Mayor",
+              "idService": 2,
+              "urlImagen": "/assets/services/MM_automotriz.jpeg",
+              "main": false,
+              "label": "",
+              "description": "<p>Servicios en el Motor: </p><ul style='list-style:disc; margin-left:20px'><li>Renovación de aceite de motor LIQUI MOLY</li><li>Aditivo para prolongar la vida útil del motor LIQUI MOLY</li></ul></br><p>Servicios en el sistema del vehículo: </p><ul style='list-style:disc; margin-left:20px'><li>Cambio de filtro de aire, de aceite</li><li>Escaneo con software original</li><li>Rellenado de shampoo, refrigerante</li><li>Limpieza de discos, pastillas, zapatas de freno, </li><li>+10 inspecciones de estados en piezas mecánicas y electrónicas</li><li>Pulverizado de motor con desengrasante</li><li>Inspección de fugas</li></ul></br><p>SIN COSTO ALGUNO: </p><ul style='list-style:disc; margin-left:20px'><li>Lavado básico, aspirado y perfumado interno y externo. </li><li>Pintado de calipers. </li></ul>",
+              "active": true
+          },
+          {
+              "idServiceDetail": 6,
+              "name": "AFINAMIENTO",
+              "fullname": "Afinamiento Electrónico",
+              "idService": 2,
+              "urlImagen": "/assets/services/Mantenimiento_ MENOR_automotriz.jpeg",
+              "main": false,
+              "label": "",
+              "description": "<p>Servicios en el Motor: </p><ul style='list-style:disc; margin-left:20px'><li>Renovación de aceite de motor LIQUI MOLY</li><li>Aditivo para prolongar la vida útil del motor LIQUI MOLY</li></ul></br><p>Servicios en el sistema del vehículo: </p><ul style='list-style:disc; margin-left:20px'><li>Cambio de filtro de aire, de aceite</li><li>Escaneo con software original</li><li>Rellenado de shampoo, refrigerante</li><li>Limpieza de discos, pastillas, zapatas de freno, </li><li>+10 inspecciones de estados en piezas mecánicas y electrónicas</li><li>Pulverizado de motor con desengrasante</li><li>Inspección de fugas</li></ul></br><p>SIN COSTO ALGUNO: </p><ul style='list-style:disc; margin-left:20px'><li>Lavado básico, aspirado y perfumado interno y externo.</li><li>Pintado de calipers.</li></ul>",
+              "active": true
+          },
+          {
+              "idServiceDetail": 7,
+              "name": "MM + AE",
+              "fullname": "Mantenimiento Mayor + Afinamiento Electrónico",
+              "idService": 2,
+              "urlImagen": "/assets/services/MM_AE_automotriz.jpeg",
+              "main": true,
+              "label": "SERVICIO ESTRELLA",
+              "description": "<p>Incluye +60 servicios que aseguran que tu motor trabaje correctamente y pueda prevenir problemas mecánicos que compliquen el tiempo de vida del vehículo.</p> </br><p>MANTENIMIENTO MAYOR: </p><p>Cambio de aceite de motor, limpieza, renovación e inspección de componentes mecánicos. </p><p>AFINAMIENTO ELECTRÓNICO: </p><p>Enfocado en limpieza e inspección de componentes electrónicos que permiten revitalizan el rendimiento del motor. </p></br><p>SIN COSTO ALGUNO: </p><ul style='list-style:disc; margin-left:20px'><li>Lavado básico, aspirado y perfumado interno y externo. </li> <li>Pintado de calipers. </li></ul>",
+              "active": true
+          },
+          {
+              "idServiceDetail": 8,
+              "name": "MTTO A/C",
+              "fullname": "Mantenimiento A/C",
+              "idService": 2,
+              "urlImagen": "/assets/services/AC_clinica_automotriz.jpeg",
+              "main": false,
+              "label": "",
+              "description": "<p> (SERVICIO CON EQUIPO DE ÚLTIMA GENERACIÓN) </p></br><ul style='list-style:disc; margin-left:20px'><li>PRUEBA DE HERMETICIDAD en cañerias, compresor y válvulas</li><li>DIAGNÓSTICO DE FUGAS del sistema de refrigeración</li><li>CAMBIO Y LLENADO TOTAL de gas refrigerante</li><li>CAMBIO de aceite de compresor</li><li>CAMBIO de filtro de aire acondicionado</li><li>LIMPIEZA Y DESINFECCIÓN de ductos de ventilación</li> <li>LAVADO de condensador de aire acondicionado</li></ul></br><p>SIN COSTO ALGUNO: </p><ul style='list-style:disc; margin-left:20px'><li>LAVADO y ASPIRADO BÁSICO interno y externo del vehículo. </li><li>LIMPIEZA Y AROMATIZACIÓN de cabina</li></ul>",
+              "active": true
+          },
+          {
+              "idServiceDetail": 9,
+              "name": "UNDERCOATING",
+              "fullname": "Undercoating",
+              "idService": 3,
+              "urlImagen": "/assets/services/undercauting_automotriz.jpeg",
+              "main": false,
+              "label": "",
+              "description": "<p>Proporciona protección contra el óxido y el desgaste, otorgando mayor tiempo de vida a la parte baja del vehículo. </p></br><p>UNDERCOATING: </p><ul style='list-style:disc; margin-left:20px'><li>Reduce ruidos, vibraciones y efectos de golpes de piedras. </li><li>Protección contra la humedad. </li></ul><p>ZINCADO: </p><ul style='list-style:disc; margin-left:20px'><li>Repara y protege la linea de escape contrra la oxidación. </li><li>Proporciona un fino acabado, mejorando su aspecto visual.</li></ul></br><p>SIN COSTO ALGUNO: </p><ul style='list-style:disc; margin-left:20px'><li>Lavado básico, aspirado y perfumado interno y externo. </li><li>Pintado de calipers. </li></ul>",
+              "active": true
+          },
+          {
+              "idServiceDetail": 10,
+              "name": "PROXIMAMENTE",
+              "fullname": "Lavado",
+              "idService": 4,
+              "urlImagen": "/assets/services/AC_clinica_automotriz.jpeg",
+              "main": false,
+              "label": "",
+              "description": "Proximamente Servicio de Lavado",
               "active": true
           }
       ]

@@ -45,6 +45,7 @@ const LocateUs = () => {
 
   return (
     <div className='text-center px-10 md:px-16 lg:px-24 xl:px-36 2xl:px-44 mb-14 mt-8'>
+      <div className='relative -top-36' id="locate-us"></div>
       <div className='flex flex-col items-center lg:flex-row lg:items-start lg:justify-center'>
         <div>
           <h2 className='font-extrabold text-3xl text-yellow-400 lg:text-4xl lg:mt-5 lg:w-52 lg:text-left lg:relative lg:left-10 lg:z-10'>NUESTRAS SEDES</h2>

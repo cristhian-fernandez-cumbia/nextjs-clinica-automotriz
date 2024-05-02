@@ -5,7 +5,7 @@ import Button from '../button/Button'
 
 const Tiktok = () => {
   return (
-    <div className='flex justify-center px-10 md:px-16 lg:px-24 xl:px-36 2xl:px-44 mb-12 mt-10'>
+    <div className='flex justify-center px-10 md:px-16 lg:px-24 xl:px-36 2xl:px-44 mb-12 mt-10' id='tiktok'>
       <div className='bg-white flex justify-center flex-col rounded-lg  py-6  w-full lg:w-[800px]'>
         <div className='flex justify-center items-center mb-3'>
           <Image src={logoTiktok} alt='logoTiktok' width={80} height={80}/>

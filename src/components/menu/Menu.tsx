@@ -15,10 +15,10 @@ const Menu: React.FC = () => {
                     </svg>
                 </Button>
                 {showMenu && (
-                    <ul className="absolute top-24 left-0 bg-black text-white w-full py-6 px-12 rounded shadow-lg animate-slideDown duration-3000 z-10">
-                        <MenuItem text="SERVICIOS"/>
-                        <MenuItem text="LOCALES" />
-                        <MenuItem text="TIKTOK" />
+                    <ul className="absolute top-[70px] left-0 bg-black text-white w-full py-6 px-12 rounded shadow-lg animate-slideDown duration-3000 z-10">
+                        <MenuItem text="SERVICIOS" to='services'/>
+                        <MenuItem text="LOCALES" to='locate-us'/>
+                        <MenuItem text="TIKTOK" to='tiktok'/>
                         <Button className="bg-yellow-400 text-black px-10 py-2 mt-4 mb-2 rounded-tr-2xl rounded-bl-2xl hover:text-red-600 hover:bg-white font-bold">AGENDA TU CITA</Button>
                     </ul>
                 )}
@@ -26,9 +26,9 @@ const Menu: React.FC = () => {
 
             <div className="hidden lg:flex bg-transparent">
                 <ul className="flex items-center">
-                    <MenuItem text="SERVICIOS" />
-                    <MenuItem text="LOCALES" />
-                    <MenuItem text="TIKTOK" />
+                    <MenuItem text="SERVICIOS" to='services'/>
+                    <MenuItem text="LOCALES" to='locate-us'/>
+                    <MenuItem text="TIKTOK" to='tiktok'/>
                 </ul>
                 <Button className="bg-yellow-400 text-black px-10 py-2 rounded-tr-2xl rounded-bl-2xl hover:text-red-600 hover:bg-white font-bold">AGENDA TU CITA</Button>
             </div>

@@ -2,36 +2,28 @@
   "data": {
       "services": [
           {
-              "idService": 0,
-              "name": "Fallas",
-              "urlImagen": "",
-              "active": true,
-              "items":[
-                0
-              ]
-          },
-          {
               "idService": 1,
-              "name": "Mantenimiento",
+              "name": "FALLAS",
               "urlImagen": "",
-              "active": true,
-              "items":[
-                1, 2
-              ]
+              "active": true
           },
           {
               "idService": 2,
-              "name": "Undercoating",
+              "name": "MANTENIMIENTO",
               "urlImagen": "",
-              "active": true,
-              "items":[]
+              "active": true
           },
           {
               "idService": 3,
-              "name": "Lavado",
+              "name": "ÓXIDO",
               "urlImagen": "",
-              "active": true,
-              "items":[]
+              "active": true
+          },
+          {
+              "idService": 4,
+              "name": "LAVADO",
+              "urlImagen": "",
+              "active": true
           }
       ]
   }
