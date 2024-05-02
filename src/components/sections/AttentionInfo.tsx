@@ -2,11 +2,11 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import attentions from '@/api/attencionInfo.json';
-import { AttentionInfo } from './../../interface/home';
+import { AttentionInfoProps } from '@/interface/home';
 
 const AttentionInfo = () => {
   const [currentAttentionIndex, setCurrentAttentionIndex] = useState<number>(0);
-  const attentionData: AttentionInfo[] = attentions.data.attentions;
+  const attentionData: AttentionInfoProps[] = attentions.data.attentions;
 
   const handleClickDot = (index: number) => {
     setCurrentAttentionIndex(index);

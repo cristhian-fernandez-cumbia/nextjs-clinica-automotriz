@@ -1,4 +1,4 @@
-export interface AttentionInfo {
+export interface AttentionInfoProps {
   idAttention: number;
   urlImagen: string;
   description: string;
