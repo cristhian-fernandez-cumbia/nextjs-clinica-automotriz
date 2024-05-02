@@ -69,7 +69,7 @@ const MaintenanceSearch: React.FC<MaintenanceSearchProps> = ({vehiculo}) => {
           </div>
         </div>
       ) : (
-        <div>Placa no encontrada2</div>
+        <div>Placa no encontrada</div>
       )}
     </div>
   )
