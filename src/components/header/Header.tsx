@@ -36,7 +36,7 @@ const Header = () => {
       }`}
     >
       <Link href={"/"}>
-        <Image src={logo_clinica_automotriz} alt="logo_clinica_automotriz" className="w-36 lg:w-60" />
+        <Image src={logo_clinica_automotriz} alt="logo_clinica_automotriz" className="w-[140px] lg:w-[200px]" />
       </Link>
       <Menu />
     </div>

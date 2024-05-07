@@ -82,7 +82,7 @@ const Services = () => {
               {services.data.services.map((service: Service) => (
                 <button
                   key={service.idService}
-                  className={`px-4 py-2 text-white border-2 border-red-500 mr-10 rounded-lg ${selectedService === service ? 'bg-red-500' : 'bg-transparent'}`}
+                  className={`px-4 py-2 text-white border-4 border-primary mr-10 font-bold rounded-lg ${selectedService === service ? 'bg-primary' : 'bg-transparent'}`}
                   onClick={() => selectService(service)}
                 >
                   {service.name}

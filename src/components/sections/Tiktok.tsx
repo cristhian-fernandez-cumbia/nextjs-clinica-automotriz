@@ -32,7 +32,7 @@ const Tiktok = () => {
           <p className='text-sm lg:text-base'>¡Atención con previa cita!</p>
         </div>
         <div className='flex justify-center'>
-          <Button className="bg-[#FE2C55] text-white px-10 py-2 rounded-lg  hover:bg-red-800 font-bold">Open Tiktok</Button>
+          <Button className="bg-primary text-white px-10 py-2 rounded-lg  hover:bg-red-800 font-bold">Open Tiktok</Button>
         </div>
       </div>
     </div>
