@@ -19,7 +19,7 @@ const AttentionInfo = () => {
         <h2 className={`font-bold text-lg text-white bg-${attentionData[currentAttentionIndex].color}-600 inline-block py-1 px-3 rounded-lg mb-2`}>{attentionData[currentAttentionIndex].title}</h2>
         <h3 className='text-white font-extrabold text-3xl mb-2'>{attentionData[currentAttentionIndex].subtitle}</h3>
         <ReactPlayerNoSSR 
-          url={attentionData[currentAttentionIndex].urlImagen}
+          url={attentionData[currentAttentionIndex].urlVideo}
           width={300}
           height={300}
           controls={true}
