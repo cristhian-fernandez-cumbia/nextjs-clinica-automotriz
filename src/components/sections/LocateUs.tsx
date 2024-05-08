@@ -1,9 +1,11 @@
 'use client'
+
 import React, { useState, useEffect } from 'react';
 import { ArrowLeftBold, ArrowRightBold } from '@/assets/icons';
 import dataLocateUs from '@/api/locateUs.json';
-import Image from 'next/image';
 import { Local } from '@/interface/home';
+import dynamic from 'next/dynamic'; 
+const ReactPlayerNoSSR = dynamic(() => import('react-player'), { ssr: false });
 
 const LocateUs = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
@@ -23,16 +25,16 @@ const LocateUs = () => {
       let width, height;
       if (window.innerWidth >= 1280) {
         width = 800;
-        height = 800;
+        height = 500;
       } else if (window.innerWidth >= 1024) {
         width = 600;
-        height = 600;
+        height = 400;
       } else if (window.innerWidth >= 768) {
         width = 400;
-        height = 400;
+        height = 250;
       } else {
         width = 300;
-        height = 300;
+        height = 150;
       }
       setImageDimensions({ width, height });
     };
@@ -53,15 +55,17 @@ const LocateUs = () => {
         </div>
 
         <div className='relative flex flex-col items-center'>
-          <Image
-            src={locateUsData[currentImageIndex].urlImagen}
-            alt={locateUsData[currentImageIndex].urlImagen}
-            className='mb-4'
+          <ReactPlayerNoSSR 
+            url={locateUsData[currentImageIndex].urlVideo}
             width={imageDimensions.width}
             height={imageDimensions.height}
+            controls={true}
+            playing={true}
+            loop={true}
           />
-          <div className='flex flex-row justify-center'>
-            <p className='font-semibold text-xs bg-green-600 text-white py-2 px-3 inline-block rounded-lg mr-2 lg:absolute lg:bottom-12 lg:right-14 lg:scale-150'>
+          
+          <div className='flex flex-row justify-center mt-2 lg:mt-0'>
+            <p className='font-semibold text-xs bg-green-600 text-white py-2 px-3 inline-block rounded-lg mr-2 lg:absolute lg:bottom-12 lg:right-14 lg:scale-150 lg:hidden'>
               {locateUsData[currentImageIndex].address}
             </p>
             <div className='bg-yellow-400 inline-block py-1 px-2 rounded-lg mr-2 lg:absolute lg:bottom-12 lg:-left-16 lg:scale-150' onClick={handlePrevImage}>

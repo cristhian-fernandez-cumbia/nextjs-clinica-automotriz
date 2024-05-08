@@ -4,6 +4,7 @@
           {
               "idLocal": 1,
               "urlImagen": "/assets/images/sede_chorrillos_clinica_automotriz.png",
+              "urlVideo": "https://player.vimeo.com/video/943910839",
               "description": "",
               "district": "Chorillos",
               "address": "Jr. Teniente Carlos Jimenez Chavez 339A",
@@ -18,6 +19,7 @@
           {
               "idLocal": 2,
               "urlImagen": "/assets/images/sede_olivos_clinica_automotriz.png",
+              "urlVideo": "https://player.vimeo.com/video/943910839",
               "description": "",
               "district": "Los Olivos",
               "address": "Calle Santa Angélica 216",

@@ -2,8 +2,8 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import dataLogos from '@/api/logos.json'
-import Image from 'next/image';
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+// import Image from 'next/image';
+// import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 interface Logos {
@@ -73,127 +73,16 @@ const ServicesCounter = () => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
   return (
-    <div className='flex justify-center items-center bg-cover bg-center bg-no-repeat' style={{backgroundImage: `url(${dataLogos.data.urlImagen})`, backgroundPosition: 'top'}}>
-      <div className='flex flex-col items-center bg-fuchsia-900 bg-opacity-60 w-[350px] my-8 lg:my-16 py-8 lg:py-10 rounded-xl lg:flex-row lg:w-[800px] lg:justify-center'>
-        <div className='flex flex-col items-center mb-8 lg:mb-0 lg:mr-12'>
-          <h2 className='text-yellow-400 text-3xl text-center font-extrabold mb-1'>VEHICULOS</h2>
-          <h3 className='text-white text-xl text-center font-bold mb-3'>EN CITA 28/03/2024</h3>
-          <div className='bg-yellow-400 hidden lg:inline-block rounded-lg py-2 px-10 text-center'>
-            <p className='text-sm font-medium'>NUEVAS CITAS EN:</p>
-            {/* <p className='text-xs font-extrabold'>00:01:25</p> */}
-            <p className='text-xs font-extrabold'>{countdown}</p>
-          </div>
-        </div>
-        <div className='flex flex-row items-center justify-center mb-8 lg:mb-0 lg:py-8'>
-          <div className='flex flex-col items-start'>
-            <div className='bg-white rounded-full border-red-600 flex justify-center items-center w-20 h-20 relative'>
-              <Image src={logosData[1].urlImagen} width={55} height={55} alt={logosData[1].name}/>
-              <div style={{ width: 84, height: 84, position: 'absolute' }}>
-                <CircularProgressbar
-                  value={getRandomInteger(logosData[1].randomStart, logosData[1].randomEnd)}
-                  strokeWidth={10}
-                  styles={buildStyles({
-                    rotation: 0,
-                    pathColor: logosData[1].color,
-                    trailColor: 'none',
-                  })}
-                />
-              </div>
-            </div>
-            <div className='bg-white rounded-full border-red-600 flex justify-center items-center w-14 h-14 my-4 relative'>
-              <Image src={logosData[2].urlImagen} width={40} height={40} alt={logosData[2].name}/>
-              <div style={{ width: 60, height: 60, position: 'absolute' }}>
-                <CircularProgressbar
-                  value={getRandomInteger(logosData[2].randomStart, logosData[2].randomEnd)}
-                  strokeWidth={10}
-                  styles={buildStyles({
-                    rotation: 0,
-                    pathColor: logosData[2].color,
-                    trailColor: 'none',
-                  })}
-                />
-              </div>
-            </div>
-            <div className='bg-white rounded-full border-red-600 flex justify-center items-center w-20 h-20 relative'>
-              <Image src={logosData[3].urlImagen} width={55} height={55} alt={logosData[3].name}/>
-              <div style={{ width: 84, height: 84, position: 'absolute' }}>
-                <CircularProgressbar
-                  value={getRandomInteger(logosData[3].randomStart, logosData[3].randomEnd)}
-                  strokeWidth={10}
-                  styles={buildStyles({
-                    rotation: 0,
-                    pathColor: logosData[3].color,
-                    trailColor: 'none',
-                  })}
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className='bg-white rounded-full border-red-600 flex justify-center items-center w-32 h-32 relative'>
-              <Image src={logosData[0].urlImagen} width={60} height={60} alt={logosData[0].name}/>
-              <div style={{ width: 140, height: 140, position: 'absolute' }}>
-                <CircularProgressbar
-                  value={getRandomInteger(logosData[0].randomStart, logosData[0].randomEnd)}
-                  strokeWidth={10}
-                  styles={buildStyles({
-                    rotation: 0,
-                    pathColor: logosData[0].color,
-                    trailColor: 'none',
-                  })}
-                />
-              </div>
-            </div>
-          </div>
-          <div className='flex flex-col items-end'>
-            <div className='bg-white rounded-full border-red-600 flex justify-center items-center w-20 h-20 relative'>
-              <Image src={logosData[4].urlImagen} width={55} height={55} alt={logosData[4].name}/>
-              <div style={{ width: 84, height: 84, position: 'absolute' }}>
-                <CircularProgressbar
-                  value={getRandomInteger(logosData[4].randomStart, logosData[4].randomEnd)}
-                  strokeWidth={10}
-                  styles={buildStyles({
-                    rotation: 0,
-                    pathColor: logosData[4].color,
-                    trailColor: 'none',
-                  })}
-                />
-              </div>
-            </div>
-            <div className='bg-white rounded-full border-red-600 flex justify-center items-center w-14 h-14 my-4'>
-              <Image src={logosData[5].urlImagen} width={40} height={40} alt={logosData[5].name}/>
-              <div style={{ width: 60, height: 60, position: 'absolute' }}>
-                <CircularProgressbar
-                  value={getRandomInteger(logosData[5].randomStart, logosData[5].randomEnd)}
-                  strokeWidth={10}
-                  styles={buildStyles({
-                    rotation: 0,
-                    pathColor: logosData[5].color,
-                    trailColor: 'none',
-                  })}
-                />
-              </div>
-            </div>
-            <div className='bg-white rounded-full border-red-600 flex justify-center items-center w-20 h-20 relative'>
-              <Image src={logosData[6].urlImagen} width={55} height={55} alt={logosData[6].name}/>
-              <div style={{ width: 84, height: 84, position: 'absolute' }}>
-                <CircularProgressbar
-                  value={getRandomInteger(logosData[6].randomStart, logosData[6].randomEnd)}
-                  strokeWidth={10}
-                  styles={buildStyles({
-                    rotation: 0,
-                    pathColor: logosData[6].color,
-                    trailColor: 'none',
-                  })}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='bg-yellow-400 inline-block rounded-lg py-2 px-10 text-center lg:hidden'>
-          <p className='text-sm font-medium'>NUEVAS CITAS EN:</p>
-          <p className='text-xs font-extrabold'>{countdown}</p>
-        </div>
+    <div className='relative'>
+      <div className='absolute w-full h-40 -top-24 '>
+        <div className='absolute inset-0 bg-gradient-to-t from-transparent via-gray-700 to-transparent'></div>
+      </div>
+
+      <div className='flex justify-center items-center bg-cover bg-center bg-no-repeat relative mb-20' style={{backgroundImage: `url(${dataLogos.data.urlImagen})`, backgroundPosition: 'top'}}>
+        <div className='w-52 h-[850px]'></div>
+      </div>
+      <div className='absolute w-full h-40 bottom-5'>
+        <div className='absolute inset-0 bg-gradient-to-t from-transparent via-gray-500 to-transparent'></div>
       </div>
     </div>
   )

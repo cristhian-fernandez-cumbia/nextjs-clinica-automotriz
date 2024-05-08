@@ -1,6 +1,7 @@
 export interface AttentionInfoProps {
   idAttention: number;
   urlImagen: string;
+  urlVideo: string;
   description: string;
   title: string;
   subtitle: string;
@@ -11,6 +12,7 @@ export interface AttentionInfoProps {
 export interface Local {
   idLocal: number;
   urlImagen: string;
+  urlVideo: string;
   description: string;
   district: string;
   address: string;
