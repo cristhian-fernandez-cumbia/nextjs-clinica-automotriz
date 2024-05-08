@@ -55,11 +55,14 @@ const Maintenance = () => {
             />
             
             <div className='relative'>
-              <p className='text-gray-400 font-bold text-xs lg:text-sm mb-3 lg:mb-28 lg:w-64'>2. LISTO! AHORA PUEDES CONOCER LA FECHA EXACTA</p>
+              <p className='text-gray-400 font-bold text-xs lg:text-sm mb-2 lg:w-64'>2. LISTO! AHORA PUEDES CONOCER LA FECHA EXACTA</p>
               <ArrowCurved className='absolute top-5 left-[242px] hidden lg:block'/>
               <ArrowCurvedPhone className='absolute -top-12 left-[202px] lg:hidden'/>
             </div>
-            <button className="bg-primary text-white px-7 lg:px-10 py-2 rounded-lg hover:bg-red-700 font-bold absolute -bottom-4 lg:bottom-6 -right-24 hover:cursor-pointer z-10" type="submit" onClick={openModal}>BUSCAR AHORA </button>
+            <div className='relative'>
+              <p className='text-gray-400 font-bold text-xs lg:text-sm mb-2 lg:mb-16 lg:w-64'>3. PRÓXIMA FECHA O PRÓXIMO KILOMETRAJE</p>
+            </div>
+            <button className="bg-primary text-white px-7 lg:px-10 py-3 rounded-lg hover:bg-red-700 font-bold absolute -bottom-4 lg:bottom-5 -right-24 hover:cursor-pointer z-10" type="submit" onClick={openModal}>BUSCAR AHORA </button>
           </form>
         </div>
       </div>

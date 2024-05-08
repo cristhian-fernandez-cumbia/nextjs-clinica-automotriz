@@ -106,7 +106,7 @@ body {
 }
 @media only screen and (min-width: 950px) {
   .modalContent{
-    background: linear-gradient(to left, #FDDA04 30%, white 20%);
+    background: linear-gradient(to left, #FDDA04 33%, white 20%);
   }
 }
 
