@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import MenuItem from './MenuItem';
 import Button from '../button/Button';
+import { openWhatsApp } from '@/utils/functions';
 
 const Menu: React.FC = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -19,7 +20,7 @@ const Menu: React.FC = () => {
                         <MenuItem text="SERVICIOS" to='services'/>
                         <MenuItem text="LOCALES" to='locate-us'/>
                         <MenuItem text="TIKTOK" to='tiktok'/>
-                        <Button className="bg-yellow-400 text-black px-10 py-2 mt-4 mb-2 rounded-tr-md rounded-bl-md hover:text-primary hover:bg-white font-bold">AGENDA TU CITA</Button>
+                        <Button className="bg-yellow-400 text-black px-10 py-2 mt-4 mb-2 rounded-tr-md rounded-bl-md hover:text-primary hover:bg-white font-bold" onClick={openWhatsApp}>AGENDA TU CITA</Button>
                     </ul>
                 )}
             </div>
@@ -30,7 +31,7 @@ const Menu: React.FC = () => {
                     <MenuItem text="LOCALES" to='locate-us'/>
                     <MenuItem text="TIKTOK" to='tiktok'/>
                 </ul>
-                <Button className="bg-yellow-400 text-black px-10 py-2 rounded-tr-md rounded-bl-md hover:text-primary hover:bg-white font-bold">AGENDA TU CITA</Button>
+                <Button className="bg-yellow-400 text-black px-10 py-2 rounded-tr-md rounded-bl-md hover:text-primary hover:bg-white font-bold" onClick={openWhatsApp}>AGENDA TU CITA</Button>
             </div>
         </nav>
     );

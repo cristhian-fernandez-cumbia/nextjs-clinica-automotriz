@@ -3,6 +3,7 @@ import React from 'react'
 import sticker_servicio_automotriz from '@/assets/img/home/sticker_servicio_automotriz.png'
 import Image from 'next/image'
 import { Vehiculo } from '@/interface/home'
+import { openWhatsApp } from '@/utils/functions'
 
 interface MaintenanceSearchProps {
   vehiculo: Vehiculo | null;
@@ -62,7 +63,7 @@ const MaintenanceSearch: React.FC<MaintenanceSearchProps> = ({vehiculo}) => {
               <Image src={sticker_servicio_automotriz} alt='sticker_servicio_automotriz' width={180} className='relative top-2 lg:top-7 ml-20 lg:ml-12'/>
             </div>
             <div className='flex flex-col items-center'>
-              <Button className='bg-primary py-3 text-lg font-bold text-white rounded-lg hover:bg-red-700 hover:cursor-pointer lg:mt-10 w-52 mb-4 l:mb-0 mr-2'>SEPARAR CITA</Button>
+              <Button className='bg-primary py-3 text-lg font-bold text-white rounded-lg hover:bg-red-700 hover:cursor-pointer lg:mt-10 w-52 mb-4 l:mb-0 mr-2' onClick={openWhatsApp}>SEPARAR CITA</Button>
               <div>
                 <span className='text-xs font-bold relative top-[2px] lg:ml-2 text-black'>Nota:</span>
                 <div className='text-xs lg:w-56 leading-[14px] lg:relative lg:left-2 text-black'>* Se recomienda cada 06 meses o cada 10 MIL KM</div>

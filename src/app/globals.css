@@ -111,7 +111,7 @@ body {
 }
 
 .background-white{
-  background: linear-gradient(to left, #FDDA04 20%, white 70%);
+  background: linear-gradient(to left, #FDDA04 40%, white 95%);
 }
 
 @font-face {

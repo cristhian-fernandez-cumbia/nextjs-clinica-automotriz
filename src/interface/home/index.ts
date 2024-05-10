@@ -37,6 +37,7 @@ export interface ServiceDetail {
   urlImagen: string;
   active: boolean;
   label: string;
+  bgColor: string;
   description: string;
   main: boolean;
 }

@@ -1,7 +1,9 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import logoTiktok from '@/assets/img/home/logo_titkok.png'
 import Button from '../button/Button'
+import { openLink } from '@/utils/functions'
 
 const Tiktok = () => {
   return (
@@ -32,7 +34,7 @@ const Tiktok = () => {
           <p className='text-sm lg:text-base'>¡Atención con previa cita!</p>
         </div>
         <div className='flex justify-center'>
-          <Button className="bg-primary text-white px-10 py-2 rounded-lg  hover:bg-red-800 font-bold">Open Tiktok</Button>
+          <Button className="bg-primary text-white px-10 py-2 rounded-lg  hover:bg-red-800 font-bold" onClick={()=>{openLink('https://www.tiktok.com/@clinicautomotrizoficial')}}>Open Tiktok</Button>
         </div>
       </div>
     </div>

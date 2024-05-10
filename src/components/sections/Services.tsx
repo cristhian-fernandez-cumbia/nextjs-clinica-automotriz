@@ -63,6 +63,7 @@ const Services = () => {
   const openModal = (content: ServiceDetail) => {
     setModalOpen(true);
     setModalContent(content);
+    console.log('modalcontent::', modalContent)
   };
 
   const closeModal = () => {
@@ -89,11 +90,11 @@ const Services = () => {
                 </button>
               ))}
             </div>
-            <div className="mt-20 flex flex-nowrap justify-center pb-14 lg:mt-24">
+            <div className="mt-10 flex flex-nowrap justify-center pb-14 lg:mt-14">
               {visibleServiceDetails.map((detail: ServiceDetail, index) => (
                 <div
                   key={`ServiceDetail-${index}`}
-                  className={`w-1/3 mx-7 lg:mx-11 ${index === 1 ? 'scale-150 z-10' : ''}`}
+                  className={`w-1/3 mx-1 lg:mx-4 ${index === 1 ? 'scale-100 z-10' : 'scale-75'}`}
                 >
                   <ServicesCard detail={detail} openModal={openModal} />
                 </div>
@@ -106,9 +107,16 @@ const Services = () => {
           </button>
         </div>
       </div>
-      <Modal isOpen={isModalOpen} onClose={closeModal} className='background-white'>
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={closeModal}  
+        style={{ 
+          background: `linear-gradient(to left, ${modalContent?.bgColor ? modalContent.bgColor : '#FDDA04'} -20%, white 95%)` 
+        }}
+      >
         {modalContent && <ModalServicesCard {...modalContent}/>}
       </Modal>
+
     </>
   );
 };

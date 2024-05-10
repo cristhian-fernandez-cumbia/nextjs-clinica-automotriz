@@ -1,7 +1,9 @@
+'use client'
 import React from 'react'
 import sticker_footer from '@/assets/img/home/sticker_clinica_automotriz_preferencia.png'
 import Image from 'next/image'
 import { FacebookIcon, InstagramIcon, LinkedinIcon, TiktokIcon, WhatsappIcon } from '@/assets/icons'
+import { openLink } from '@/utils/functions'
 
 const Footer = () => {
   return (
@@ -30,16 +32,16 @@ const Footer = () => {
           <Image src={sticker_footer} alt='sticker_clinica_automotriz_preferencia' width={250} className='relative -bottom-5 lg:hidden'/>
           <div className='flex flex-col items-center relative w-64 lg:w-auto right-16 lg:right-0'>
             <div className="grid grid-cols-2 gap-3 w-24 mb-4 lg:flex lg:mt-6">
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.facebook.com/clinicautomotrizoficial')}}>
                 <FacebookIcon className="w6 h-6" />
               </div>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.tiktok.com/@clinicautomotrizoficial')}}>
                 <TiktokIcon className="w-6 h-6" />
               </div>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.instagram.com/clinicautomotrizoficial')}}>
                 <InstagramIcon className="w-6 h-6" />
               </div>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.linkedin.com/company/clinica-automotriz-sac/')}}>
                 <LinkedinIcon className="w-6 h-6" />
               </div>
             </div>
