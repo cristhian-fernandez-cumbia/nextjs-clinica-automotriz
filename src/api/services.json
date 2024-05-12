@@ -3,7 +3,7 @@
       "services": [
           {
               "idService": 1,
-              "name": "FALLAS",
+              "name": "BUSCAR FALLAS",
               "urlImagen": "",
               "active": true
           },
@@ -15,7 +15,7 @@
           },
           {
               "idService": 3,
-              "name": "ÓXIDO",
+              "name": "PROTEGER ÓXIDO",
               "urlImagen": "",
               "active": true
           },

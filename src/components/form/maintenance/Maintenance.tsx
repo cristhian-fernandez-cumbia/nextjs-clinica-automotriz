@@ -57,7 +57,7 @@ const Maintenance = () => {
             <div className='relative'>
               <p className='text-gray-400 font-bold text-xs lg:text-sm mb-2 lg:w-64'>2. LISTO! AHORA PUEDES CONOCER LA FECHA EXACTA</p>
               <ArrowCurved className='absolute top-5 left-[242px] hidden lg:block'/>
-              <ArrowCurvedPhone className='absolute -top-12 left-[202px] lg:hidden'/>
+              <ArrowCurvedPhone className='absolute -top-[42px] left-[190px] lg:hidden z-50'/>
             </div>
             <div className='relative'>
               <p className='text-gray-400 font-bold text-xs lg:text-sm mb-2 lg:mb-16 lg:w-64'>3. PRÓXIMA FECHA O PRÓXIMO KILOMETRAJE</p>

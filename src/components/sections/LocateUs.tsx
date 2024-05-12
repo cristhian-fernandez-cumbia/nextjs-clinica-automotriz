@@ -30,11 +30,11 @@ const LocateUs = () => {
         width = 600;
         height = 400;
       } else if (window.innerWidth >= 768) {
-        width = 400;
-        height = 250;
+        width = 450;
+        height = 320;
       } else {
         width = 300;
-        height = 150;
+        height = 240;
       }
       setImageDimensions({ width, height });
     };
@@ -50,8 +50,8 @@ const LocateUs = () => {
       <div className='relative -top-36' id="locate-us"></div>
       <div className='flex flex-col items-center lg:flex-row lg:items-start lg:justify-center'>
         <div>
-          <h2 className='font-extrabold text-3xl text-yellow-400 lg:text-4xl lg:mt-5 lg:w-52 lg:text-left lg:relative lg:left-10 lg:z-10'>NUESTRAS SEDES</h2>
-          <h3 className='font-bold text-xl text-white uppercase mb-2 lg:text-2xl lg:mt-1 lg:ml-5'>{locateUsData[currentImageIndex].district}</h3>
+          <h2 className='font-extrabold text-[33px] text-yellow-400 lg:text-[40px] lg:mt-9 lg:w-52 lg:text-left lg:relative lg:left-8 lg:z-10 leading-10 ' style={{ textShadow: '5px 5px 5px rgba(0, 0, 0, 0.5)' }}>NUESTRAS SEDES</h2>
+          <h3 className='font-bold text-xl text-white uppercase mb-2 lg:text-[23px] lg:mt-1 lg:ml-1'>{locateUsData[currentImageIndex].district}</h3>
         </div>
 
         <div className='relative flex flex-col items-center'>
@@ -68,10 +68,10 @@ const LocateUs = () => {
             <p className='font-semibold text-xs bg-green-600 text-white py-2 px-3 inline-block rounded-lg mr-2 lg:absolute lg:bottom-12 lg:right-14 lg:scale-150 lg:hidden'>
               {locateUsData[currentImageIndex].address}
             </p>
-            <div className='bg-yellow-400 inline-block py-1 px-2 rounded-lg mr-2 lg:absolute lg:bottom-12 lg:-left-16 lg:scale-150' onClick={handlePrevImage}>
+            <div className='bg-yellow-400 flex items-center lg:inline-block  py-1 px-2 rounded-lg mr-2 lg:absolute lg:bottom-12 lg:-left-16 lg:scale-150 ' onClick={handlePrevImage}>
               <ArrowLeftBold />
             </div>
-            <div className='bg-yellow-400 inline-block py-1 px-2 rounded-lg lg:absolute lg:bottom-12 lg:-right-16 lg:scale-150' onClick={handleNextImage}>
+            <div className='bg-yellow-400 flex items-center lg:inline-block py-1 px-2 rounded-lg lg:absolute lg:bottom-12 lg:-right-16 lg:scale-150' onClick={handleNextImage}>
               <ArrowRightBold />
             </div>
           </div>

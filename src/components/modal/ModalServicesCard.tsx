@@ -14,9 +14,9 @@ const ModalServicesCard: React.FC<ServiceDetail> = ({
       <div className='mb-3 mt-2 lg:mr-5 lg:mb-0 flex items-center justify-center'>
         <Image src={urlImagen} width={450} height={100} alt={fullname} className='rounded-md'/>
       </div>
-      <div className='flex flex-col w-full lg:w-96 '>
-        <h2 className='text-2xl lg:text-3xl font-bold'>{fullname}</h2>
-        <p dangerouslySetInnerHTML={{ __html: description }} className='text-sm'/>
+      <div className='flex flex-col w-full lg:w-96'>
+        <h2 className='text-2xl lg:text-3xl font-bold text-black'>{fullname}</h2>
+        <p dangerouslySetInnerHTML={{ __html: description }} className='text-sm text-black'/>
         <div className='flex justify-center lg:justify-start'>
           <Button className='bg-red-600 text-white px-8 py-1 rounded-md mt-4' onClick={openWhatsApp}>
             SEPARAR CITA

@@ -24,35 +24,35 @@ const MaintenanceSearch: React.FC<MaintenanceSearchProps> = ({vehiculo}) => {
           <h2 className='font-piedra text-3xl font-bold text-black mb-6'>{`¡Qué alegría verlo por aquí Sr. ${vehiculo.nombre}!`}</h2>
           <div className='flex flex-row gap-5 mb-3 lg:mb-8 lg:pl-12 lg:pr-24'>
             <div className='flex flex-col lg:flex-row lg:gap-5'>
-              <div className='border-2 border-gray-300 min-w-32 text-center font-medium py-1 mb-3 lg:mb-0 text-sm lg:text-base text-black'>{vehiculo.placaVehiculo}</div>
-              <div className='border-2 border-gray-300 min-w-32 text-center font-medium py-1 mb-3 lg:mb-0 text-sm lg:text-base text-black'>{vehiculo.marca}</div>
+              <div className='border-2 border-gray-300 min-w-32 font-medium py-[6px] mb-3 lg:mb-0 text-[13px] lg:text-[15px] flex items-center justify-center text-black'>{vehiculo.placaVehiculo}</div>
+              <div className='border-2 border-gray-300 min-w-32 font-medium py-[6px] mb-3 lg:mb-0 text-[13px] lg:text-[15px] flex items-center justify-center text-black'>{vehiculo.marca}</div>
             </div>
             <div className='flex flex-col lg:flex-row lg:gap-5'>
-              <div className='border-2 border-gray-300 min-w-32 text-center font-medium py-1 mb-3 lg:mb-0 text-sm lg:text-base text-black'>{vehiculo.modelo}</div>
-              <div className='border-2 border-gray-300 min-w-32 text-center font-medium py-1 mb-3 lg:mb-0 text-sm lg:text-base text-black'>{vehiculo.ano}</div>
+              <div className='border-2 border-gray-300 min-w-32 font-medium py-[6px] mb-3 lg:mb-0 text-[13px] lg:text-[15px] flex items-center justify-center text-black'>{vehiculo.modelo}</div>
+              <div className='border-2 border-gray-300 min-w-32 font-medium py-[6px] mb-3 lg:mb-0 text-[13px] lg:text-[15px] flex items-center justify-center text-black'>{vehiculo.ano}</div>
             </div>
           </div>
           <div className='flex flex-col lg:flex-row gap-5 mb-4 lg:pl-12 lg:pr-24'>
             <div className='flex flex-row gap-5'>
               <div>
-                <div className='font-bold text-sm text-center mb-2 text-black'>Última Visita</div>
-                <div className='border-2 border-gray-300 min-w-32 text-center font-medium py-1 text-sm lg:text-base text-black'>{vehiculo.ultimaVisita}</div>
+                <div className='font-bold text-sm text-center mb-[6px] text-black'>Última Visita</div>
+                <div className='border-2 border-gray-300 min-w-32 text-center font-medium py-[6px] text-[13px] lg:text-[15px] text-black bg-[#DEDEDE]'>{vehiculo.ultimaVisita}</div>
               </div>
               <div>
-                <div className='font-bold text-sm text-center mb-2 text-black'>Servicio Atendido</div>
-                <div className='border-2 border-gray-300 min-w-32 text-center font-medium py-1 text-sm lg:text-base text-black'>{vehiculo.servicio}</div>
+                <div className='font-bold text-sm text-center mb-[6px] text-black'>Servicio Atendido</div>
+                <div className='border-2 border-gray-300 min-w-32 text-center font-medium py-[6px] text-[13px] lg:text-[15px] text-black bg-[#DEDEDE]'>{vehiculo.servicio}</div>
               </div>
             </div>
             <div className='flex flex-row gap-5'>
               <div>
-                <div className='font-bold text-sm text-center mb-2 text-black'>Próximo Fecha</div>
-                <div className='border-2 border-yellow-300 lg:border-gray-300 min-w-32 text-center font-semibold py-1 text-sm lg:text-base text-black'>
+                <div className='font-bold text-sm text-center mb-[6px] text-black'>Próximo Fecha</div>
+                <div className='border-2 border-[#FDDA04] lg:border-gray-300 min-w-32 text-center font-bold py-[6px] text-[13px] lg:text-[15px] text-black lg:bg-[#FDDA04]'>
                   {vehiculo.ultimaVisita ? addSixMonths(vehiculo.ultimaVisita) : '-'}
                 </div>
               </div>
               <div>
-                <div className='font-bold text-sm text-center mb-2 text-black'>Próximo KM</div>
-                <div className='border-2 border-yellow-300 lg:border-gray-300 min-w-32 text-center font-semibold py-1 text-sm lg:text-base text-black'>
+                <div className='font-bold text-sm text-center mb-[6px] text-black'>Próximo KM</div>
+                <div className='border-2 border-[#FDDA04] lg:border-white min-w-32 text-center font-bold py-[6px] text-[13px] lg:text-[15px] text-black'>
                   {isNaN(parseFloat(vehiculo.asKmInicial)) ? '-' : `${parseFloat(vehiculo.asKmInicial) + 10000} KM`}
                 </div>
               </div>

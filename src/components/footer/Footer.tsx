@@ -15,18 +15,18 @@ const Footer = () => {
         </div>
         <div className='flex justify-center'>
           <WhatsappIcon className='mr-1'/>
-          <p className='font-bold mb-4'>+51 941 605 353</p>
+          <p className='font-bold mb-4 text-black'>+51 941 605 353</p>
         </div>
       </div>
       <Image src={sticker_footer} alt='sticker_clinica_automotriz_preferencia' width={250} className='relative -bottom-5 hidden lg:block mx-4'/>
       <div className='flex flex-col items-center'>
         <div className='mb-3 lg:mt-10'>
-          <h3 className='font-extrabold'>SEDE CHORRILLOS</h3>
-          <p className='text-[12px]'>Jr. Teniente Carlos Jimenez Chavez 339A</p>
+          <h3 className='font-extrabold text-black'>SEDE CHORRILLOS</h3>
+          <p className='text-[13px] text-black'>Jr. Teniente Carlos Jimenez Chavez 339A</p>
         </div>
         <div>
-          <h3 className='font-extrabold'>SEDE LOS OLIVOS</h3>
-          <p className='text-[12px]'>C. Sta. Angélica 216, San Martín de Porres 15314</p>
+          <h3 className='font-extrabold text-black'>SEDE LOS OLIVOS</h3>
+          <p className='text-[13px] text-black'>C. Sta. Angélica 216, San Martín de Porres 15314</p>
         </div>
         <div className='flex items-end'>
           <Image src={sticker_footer} alt='sticker_clinica_automotriz_preferencia' width={250} className='relative -bottom-5 lg:hidden'/>
@@ -45,8 +45,8 @@ const Footer = () => {
                 <LinkedinIcon className="w-6 h-6" />
               </div>
             </div>
-            <div className='text-sm mb-5 w-56 lg:flex lg:w-80 lg:text-[11px]'>
-              <p className='lg:mr-1'>Copyright ©️ Caleand 2024 -</p>
+            <div className='text-sm mb-5 w-56 lg:flex lg:w-80 lg:text-[11px] text-black'>
+              <p className='lg:mr-1 '>Copyright ©️ Caleand 2024 -</p>
               <p>Todos los derechos reservados</p>
             </div>
           </div>

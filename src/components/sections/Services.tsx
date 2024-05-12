@@ -63,7 +63,6 @@ const Services = () => {
   const openModal = (content: ServiceDetail) => {
     setModalOpen(true);
     setModalContent(content);
-    console.log('modalcontent::', modalContent)
   };
 
   const closeModal = () => {
