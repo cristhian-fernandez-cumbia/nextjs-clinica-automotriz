@@ -19,6 +19,11 @@ interface Logos {
 const ServicesCounter = () => {
   const logosData: Logos[] = dataLogos.data.logos;
   const [countdown, setCountdown] = useState<string>('');
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [
+    './assets/images/extra_clinica_automotriz.png',
+    './assets/images/extra_clinica_automotriz_2.png'
+  ];
 
   const horary = [
     "08:00 - 09:00",
@@ -72,13 +77,25 @@ const ServicesCounter = () => {
   const  getRandomInteger = (min:number, max:number) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <div className='relative'>
       <div className='absolute w-full h-40 -top-24 '>
         <div className='absolute inset-0 bg-gradient-to-t from-transparent via-gray-700 to-transparent'></div>
       </div>
 
-      <div className='flex justify-center items-center bg-cover bg-center bg-no-repeat relative mb-20' style={{backgroundImage: `url(${dataLogos.data.urlImagen})`, backgroundPosition: 'top'}}>
+      {/* <div className='flex justify-center items-center bg-cover bg-center bg-no-repeat relative mb-20' style={{backgroundImage: `url(${dataLogos.data.urlImagen})`, backgroundPosition: 'top'}}> */}
+      <div 
+        className='flex justify-center items-center bg-cover bg-center bg-no-repeat relative mb-20' 
+        style={{ backgroundImage: `url(${images[currentImage]})`, backgroundPosition: 'top' }}
+      >
         <div className='w-52 h-[850px]'></div>
       </div>
       <div className='absolute w-full h-40 bottom-5'>

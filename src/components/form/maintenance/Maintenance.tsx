@@ -1,5 +1,5 @@
 'use client'
-import { ArrowCurved, ArrowCurvedPhone, Car } from '@/app/assets/icons';
+import { ArrowCurved, ArrowCurvedPhone, Car } from '@/assets/icons';
 import Modal from '@/components/modal/Modal';
 import React, { useState } from 'react';
 import MaintenanceSearch from './MaintenanceSearch';
@@ -18,7 +18,6 @@ const Maintenance = () => {
   const handleBuscarSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setVehiculo(null);
-    console.log('Placa ingresada:', placa);
     // setPlaca('');
     const placaSinFormato = placa.replace(/-/g, '').toLowerCase();
     const vehiculo = placas.find(item => item.placaVehiculo.replace(/-/g, '').toLowerCase() === placaSinFormato);

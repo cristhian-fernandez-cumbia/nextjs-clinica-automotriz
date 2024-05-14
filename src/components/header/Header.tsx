@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Menu from '../menu/Menu';
-import logo_clinica_automotriz from './../../app/assets/img/logo_clinica_automotriz.png';
+import logo_clinica_automotriz from './../../assets/img/logo/logo_clinica_automotriz.png';
 import Link from 'next/link';
 
 const Header = () => {

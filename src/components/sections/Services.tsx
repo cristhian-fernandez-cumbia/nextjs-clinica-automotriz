@@ -23,11 +23,17 @@ const Services = () => {
     }
   }, []);
 
+  // const selectService = (service: Service) => {
+  //   setSelectedService(service);
+  //   setAllServiceDetails(servicesDetail.data.servicesDetail);
+  //   const indexActual = allServiceDetails.find(detail => detail.idService === service.idService)
+  //   setCurrentIndex(indexActual ? indexActual.idServiceDetail - 1 : 0);
+  // };
   const selectService = (service: Service) => {
     setSelectedService(service);
-    setAllServiceDetails(servicesDetail.data.servicesDetail);
-    const indexActual = allServiceDetails.find(detail => detail.idService === service.idService)
-    setCurrentIndex(indexActual ? indexActual.idServiceDetail - 1 : 0);
+    const filteredDetails = servicesDetail.data.servicesDetail.filter(detail => detail.idService === service.idService);
+    setAllServiceDetails(filteredDetails);
+    setCurrentIndex(0);
   };
 
   const handlePrevClick = () => {
@@ -54,11 +60,25 @@ const Services = () => {
     });
   };
 
-  const visibleServiceDetails = [
-    allServiceDetails[(currentIndex - 1 + allServiceDetails.length) % allServiceDetails.length],
-    allServiceDetails[currentIndex],
-    allServiceDetails[(currentIndex + 1) % allServiceDetails.length],
-  ];
+  // const visibleServiceDetails = [
+  //   allServiceDetails[(currentIndex - 1 + allServiceDetails.length) % allServiceDetails.length],
+  //   allServiceDetails[currentIndex],
+  //   allServiceDetails[(currentIndex + 1) % allServiceDetails.length],
+  // ];
+
+  const visibleServiceDetails = [];
+
+  if (allServiceDetails.length === 1) {
+    visibleServiceDetails.push(allServiceDetails[0]);
+  } else if (allServiceDetails.length === 2) {
+    visibleServiceDetails.push(allServiceDetails[0], allServiceDetails[1]);
+  } else {
+    visibleServiceDetails.push(
+      allServiceDetails[currentIndex],
+      allServiceDetails[(currentIndex + 1) % allServiceDetails.length],
+      allServiceDetails[(currentIndex + 2) % allServiceDetails.length]
+    );
+  }
 
   const openModal = (content: ServiceDetail) => {
     setModalOpen(true);
@@ -72,8 +92,8 @@ const Services = () => {
   return (
     <>
       <div className="px-0 md:px-16 lg:px-24 xl:px-36 2xl:px-44 mb-10">
-        <h2 className="text-white font-bold mt-4 text-center text-2xl lg:text-3xl">NUESTROS SERVICIOS</h2>
-        <div className="flex mt-4 flex-row justify-center">
+        <h2 className="text-white font-bold text-center text-2xl lg:text-3xl">NUESTROS SERVICIOS</h2>
+        <div className="flex mt-6 flex-row justify-center">
           <button className="pr-3 pl-2 lg:px-4 py-2 text-white" onClick={handlePrevClick}>
             <ArrowLeftBold fill='red'/>
           </button>
@@ -93,7 +113,7 @@ const Services = () => {
               {visibleServiceDetails.map((detail: ServiceDetail, index) => (
                 <div
                   key={`ServiceDetail-${index}`}
-                  className={`w-1/3 mx-1 lg:mx-4 ${index === 1 ? 'scale-100 z-10' : 'scale-75'}`}
+                  className={`mx-1 lg:mx-4 ${index === 1 ? 'scale-100 z-10' : 'scale-75'}`}
                 >
                   <ServicesCard detail={detail} openModal={openModal} />
                 </div>

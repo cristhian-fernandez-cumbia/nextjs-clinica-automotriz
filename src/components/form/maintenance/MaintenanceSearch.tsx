@@ -1,6 +1,7 @@
 import Button from '@/components/button/Button'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import sticker_servicio_automotriz from '@/assets/img/home/sticker_servicio_automotriz.png'
+import sticker_urgente from '@/assets/img/home/sticker_urgente.png'
 import Image from 'next/image'
 import { Vehiculo } from '@/interface/home'
 import { openWhatsApp } from '@/utils/functions'
@@ -10,6 +11,7 @@ interface MaintenanceSearchProps {
 }
 
 const MaintenanceSearch: React.FC<MaintenanceSearchProps> = ({vehiculo}) => {
+  const [sticker, setSticker] = useState(sticker_servicio_automotriz);
   const addSixMonths = (fecha: string): string => {
     const [day, month, year] = fecha.split('/');
     const newMonth = parseInt(month) + 6;
@@ -17,6 +19,22 @@ const MaintenanceSearch: React.FC<MaintenanceSearchProps> = ({vehiculo}) => {
     const formattedMonth = (newMonth % 12 || 12).toString().padStart(2, '0');
     return `${day}/${formattedMonth}/${newYear}`;
   };
+  const getMonthsDifference = (startDate: string ): number => {
+    const [day, month, year] = startDate.split('/');
+    let fecha = `20${year}-${month}-${day}`;
+    const visitDate = new Date(fecha);
+    const currentDate = new Date();
+    const diffInMonths = (currentDate.getFullYear() - visitDate.getFullYear()) * 12 + (currentDate.getMonth() - visitDate.getMonth());
+    return diffInMonths;
+  };
+  useEffect(() => {
+    if (vehiculo && getMonthsDifference(vehiculo.ultimaVisita) >= 5) {
+      setSticker(sticker_urgente);
+    } else {
+      setSticker(sticker_servicio_automotriz);
+    }
+  }, [vehiculo]);
+
   return (
     <div>
       {vehiculo ? (
@@ -60,7 +78,7 @@ const MaintenanceSearch: React.FC<MaintenanceSearchProps> = ({vehiculo}) => {
           </div>
           <div className='flex flex-col lg:flex-row w-full justify-between mb-6 lg:mb-0'>
             <div className='flex justify-center lg:flex-none'>
-              <Image src={sticker_servicio_automotriz} alt='sticker_servicio_automotriz' width={180} className='relative top-2 lg:top-7 ml-20 lg:ml-12'/>
+              <Image src={sticker} alt='sticker_servicio_automotriz' width={180} className='relative top-2 lg:top-7 ml-20 lg:ml-12'/>
             </div>
             <div className='flex flex-col items-center'>
               <Button className='bg-primary py-3 text-lg font-bold text-white rounded-lg hover:bg-red-700 hover:cursor-pointer lg:mt-10 w-52 mb-4 l:mb-0 mr-2' onClick={openWhatsApp}>SEPARAR CITA</Button>
