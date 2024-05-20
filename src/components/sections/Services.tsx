@@ -9,6 +9,7 @@ import ServicesCard from '../card/ServicesCard';
 import { Service, ServiceDetail } from '@/interface/home';
 import Modal from '@/components/modal/Modal';
 import ModalServicesCard from '../modal/ModalServicesCard';
+import { useSwipeable } from 'react-swipeable';
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState<Service>();
@@ -97,8 +98,8 @@ const Services = () => {
           <button className="pr-3 pl-2 lg:px-4 py-2 text-white" onClick={handlePrevClick}>
             <ArrowLeftBold fill='red'/>
           </button>
-          <div className="flex flex-col overflow-hidden items-center">
-            <div className="flex justify-center">
+          <div className="flex flex-col overflow-hidden items-center" >
+            <div className="flex justify-between overflow-x-auto whitespace-nowrap" style={{ maxWidth: "100%", overflowX: "auto", scrollbarWidth: "none", msOverflowStyle: "none" }}>
               {services.data.services.map((service: Service) => (
                 <button
                   key={service.idService}

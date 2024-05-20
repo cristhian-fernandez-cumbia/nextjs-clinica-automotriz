@@ -21,7 +21,7 @@ const ServicesCourtesy = () => {
       </div>
       <div className='flex flex-col items-center space-y-10 lg:space-y-0 lg:flex-row lg:space-x-10 lg:justify-center'>
         {servicesData.map(service =>(
-          <div key={`service-${service.idService}`} className='w-full lg:w-[400px]'>
+          <div key={`service-${service.idService}`} className='w-[300px] sm:w-[400px]'>
             <Image src={service.urlImagen} width={400} height={400} alt={service.title}/>
             <div className='bg-yellow-400 flex items-end py-4 px-8 justify-between'>
               <div>
@@ -29,8 +29,8 @@ const ServicesCourtesy = () => {
                 <h5 className='text-[10px] font-semibold text-black'>{service.subtitle}</h5>
               </div>
               <div className='flex flex-row items-center'>
-                <span className='text-[12px] font-semibold mr-1 text-black'>DETALLES</span>
-                <ArrowDownTriangle className='relative bottom-[2px]'/>
+                {/* <span className='text-[12px] font-semibold mr-1 text-black'>DETALLES</span>
+                <ArrowDownTriangle className='relative bottom-[2px]'/> */}
               </div>
             </div>
           </div>

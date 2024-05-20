@@ -61,7 +61,7 @@ const Maintenance = () => {
             <div className='relative'>
               <p className='text-gray-400 font-bold text-xs lg:text-sm mb-2 lg:mb-16 lg:w-64'>3. PRÓXIMA FECHA O PRÓXIMO KILOMETRAJE</p>
             </div>
-            <button className="bg-primary text-white px-7 lg:px-10 py-3 rounded-lg hover:bg-red-700 font-bold absolute -bottom-4 lg:bottom-5 -right-24 hover:cursor-pointer z-10" type="submit" onClick={openModal}>BUSCAR AHORA </button>
+            <button className="bg-primary text-white px-7 lg:px-10 py-3 rounded-lg hover:bg-red-700 font-bold absolute -bottom-4 lg:bottom-5 -right-10 sm:-right-24 hover:cursor-pointer z-10" type="submit" onClick={openModal}>BUSCAR AHORA </button>
           </form>
         </div>
       </div>

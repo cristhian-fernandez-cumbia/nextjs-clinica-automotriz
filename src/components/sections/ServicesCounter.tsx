@@ -93,7 +93,7 @@ const ServicesCounter = () => {
 
       {/* <div className='flex justify-center items-center bg-cover bg-center bg-no-repeat relative mb-20' style={{backgroundImage: `url(${dataLogos.data.urlImagen})`, backgroundPosition: 'top'}}> */}
       <div 
-        className='flex justify-center items-center bg-cover bg-center bg-no-repeat relative mb-20' 
+        className='flex justify-center items-center bg-cover bg-center bg-no-repeat relative mb-20 image-container' 
         style={{ backgroundImage: `url(${images[currentImage]})`, backgroundPosition: 'top' }}
       >
         <div className='w-52 h-[850px]'></div>

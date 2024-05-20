@@ -12,19 +12,30 @@ interface MaintenanceSearchProps {
 
 const MaintenanceSearch: React.FC<MaintenanceSearchProps> = ({vehiculo}) => {
   const [sticker, setSticker] = useState(sticker_servicio_automotriz);
+  // const addSixMonths = (fecha: string): string => {
+  //   const [day, month, year] = fecha.split('/');
+  //   const newMonth = parseInt(month) + 6;
+  //   const newYear = parseInt(year) + Math.floor(newMonth / 12);
+  //   const formattedMonth = (newMonth % 12 || 12).toString().padStart(2, '0');
+  //   return `${day}/${formattedMonth}/${newYear}`;
+  // };
   const addSixMonths = (fecha: string): string => {
+    fecha = fecha.replace(/-/g, '/');
     const [day, month, year] = fecha.split('/');
     const newMonth = parseInt(month) + 6;
     const newYear = parseInt(year) + Math.floor(newMonth / 12);
     const formattedMonth = (newMonth % 12 || 12).toString().padStart(2, '0');
-    return `${day}/${formattedMonth}/${newYear}`;
+    return `${day}-${formattedMonth}-${newYear}`;
   };
-  const getMonthsDifference = (startDate: string ): number => {
-    const [day, month, year] = startDate.split('/');
-    let fecha = `20${year}-${month}-${day}`;
-    const visitDate = new Date(fecha);
+  const getMonthsDifference = (startDate: string): number => {
+    const [day, month, year] = startDate.split('-');
+    const visitDate = new Date(`${year}-${month}-${day}`);
     const currentDate = new Date();
-    const diffInMonths = (currentDate.getFullYear() - visitDate.getFullYear()) * 12 + (currentDate.getMonth() - visitDate.getMonth());
+    const diffInYears = currentDate.getFullYear() - visitDate.getFullYear();
+    const diffInMonths = (diffInYears * 12) + (currentDate.getMonth() - visitDate.getMonth());
+    if (currentDate.getDate() < visitDate.getDate()) {
+        return diffInMonths - 1;
+    }
     return diffInMonths;
   };
   useEffect(() => {
