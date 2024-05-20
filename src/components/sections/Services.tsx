@@ -9,7 +9,6 @@ import ServicesCard from '../card/ServicesCard';
 import { Service, ServiceDetail } from '@/interface/home';
 import Modal from '@/components/modal/Modal';
 import ModalServicesCard from '../modal/ModalServicesCard';
-import { useSwipeable } from 'react-swipeable';
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState<Service>();
