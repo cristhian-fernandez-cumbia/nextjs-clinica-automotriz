@@ -20,11 +20,13 @@ const AttentionInfo = () => {
         <h3 className='text-white font-extrabold text-3xl mb-2'>{attentionData[currentAttentionIndex].subtitle}</h3>
         <ReactPlayerNoSSR 
           url={attentionData[currentAttentionIndex].urlVideo}
-          width={300}
+          width={240}
           height={300}
           controls={true}
           playing={true}
           loop={true}
+          muted={true}
+          className='rounded-xl overflow-hidden'
         />
       </div>
       <div className='flex mt-4 flex-row items-center lg:hidden'>
@@ -41,14 +43,16 @@ const AttentionInfo = () => {
           <div key={`attention-${attention.idAttention}`} className="lg:w-1/3">
             <div className='flex flex-col items-center'>
               <h2 className={`font-bold text-lg text-black inline-block py-1 px-3 rounded-lg mb-2`} style={{backgroundColor:`${attention.color}`}}>{attention.title}</h2>
-              <h3 className='text-white font-extrabold text-3xl mb-2'>{attention.subtitle}</h3>
+              <h3 className='text-white font-extrabold text-3xl mb-2 text-center w-72'>{attention.subtitle}</h3>
               <ReactPlayerNoSSR 
                 url={attention.urlVideo}
-                width={300}
+                width={240}
                 height={300}
                 controls={true}
                 playing={true}
                 loop={true}
+                muted={true}
+                className='rounded-xl overflow-hidden'
               />
             </div>
           </div>
