@@ -62,6 +62,7 @@ const LocateUs = () => {
             controls={true}
             playing={true}
             loop={true}
+            muted={true}
             className='rounded-xl overflow-hidden'
           />
           
