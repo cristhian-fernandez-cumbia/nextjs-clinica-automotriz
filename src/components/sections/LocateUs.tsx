@@ -25,7 +25,7 @@ const LocateUs = () => {
       let width, height;
       if (window.innerWidth >= 1280) {
         width = 800;
-        height = 500;
+        height = 450;
       } else if (window.innerWidth >= 1024) {
         width = 600;
         height = 400;
@@ -62,6 +62,7 @@ const LocateUs = () => {
             controls={true}
             playing={true}
             loop={true}
+            className='rounded-xl overflow-hidden'
           />
           
           <div className='flex flex-row justify-center mt-2 lg:mt-0'>

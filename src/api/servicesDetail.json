@@ -52,7 +52,7 @@
             {
                 "idServiceDetail": 5,
                 "name": "MTTO A/C",
-                "fullname": "Mantenimiento A/C",
+                "fullname": "Mantenimiento Aire Acondicionado",
                 "idService": 1,
                 "urlImagen": "/assets/services/aire_acondicionado_automotriz.png",
                 "main": false,

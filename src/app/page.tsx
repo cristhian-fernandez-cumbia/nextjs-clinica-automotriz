@@ -6,11 +6,11 @@ import Header from "@/components/header/Header";
 import Banner from '@/components/banner/Banner';
 import Services from "@/components/sections/Services";
 import Footer from "@/components/footer/Footer";
-import Tiktok from "@/components/sections/Tiktok";
 import LocateUs from "@/components/sections/LocateUs";
 import AttentionInfo from "../components/sections/AttentionInfo";
 import ServicesCourtesy from "@/components/sections/ServicesCourtesy";
 import ServicesCounter from "@/components/sections/ServicesCounter";
+import { SocialNetworks } from "@/components/sections/SocialNetworks";
 
 export default function Home() {
   // useEffect(() => {
@@ -26,7 +26,7 @@ export default function Home() {
       <ServicesCourtesy />
       <AttentionInfo />
       <LocateUs/>
-      <Tiktok/>
+      <SocialNetworks/>
       <Footer />
     </main> 
   );
