@@ -20,7 +20,7 @@ const Facebook = () => {
               <p className='text-xs text-gray-500'>Seguidores</p>
             </div>
             <div className='ml-4'>
-              <p className='font-bold text-black'>42.4 MILK</p>
+              <p className='font-bold text-black'>42.4 MIL</p>
               <p className='text-xs text-gray-500'>Me gusta</p>
             </div>
           </div>

@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 
 import React, { useState, useEffect } from 'react';
@@ -23,12 +22,6 @@ const Services = () => {
     }
   }, []);
 
-  // const selectService = (service: Service) => {
-  //   setSelectedService(service);
-  //   setAllServiceDetails(servicesDetail.data.servicesDetail);
-  //   const indexActual = allServiceDetails.find(detail => detail.idService === service.idService)
-  //   setCurrentIndex(indexActual ? indexActual.idServiceDetail - 1 : 0);
-  // };
   const selectService = (service: Service) => {
     setSelectedService(service);
     const filteredDetails = servicesDetail.data.servicesDetail.filter(detail => detail.idService === service.idService);
@@ -59,12 +52,6 @@ const Services = () => {
       }
     });
   };
-
-  // const visibleServiceDetails = [
-  //   allServiceDetails[(currentIndex - 1 + allServiceDetails.length) % allServiceDetails.length],
-  //   allServiceDetails[currentIndex],
-  //   allServiceDetails[(currentIndex + 1) % allServiceDetails.length],
-  // ];
 
   const visibleServiceDetails = [];
 

@@ -30,26 +30,29 @@ const Footer = () => {
           <h3 className='font-extrabold text-black'>SEDE LOS OLIVOS</h3>
           <p className='text-[13px] text-black'>C. Sta. Angélica 216, San Martín de Porres 15314</p>
         </div>
-        <div className='flex items-end'>
-          <Image src={sticker_footer} alt='sticker_clinica_automotriz_preferencia' width={250} className='relative -bottom-5 lg:hidden'/>
-          <div className='flex flex-col items-center relative w-64 lg:w-auto right-16 lg:right-0'>
-            <div className="grid grid-cols-2 gap-3 w-24 mb-4 lg:flex lg:mt-6">
-              <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.facebook.com/clinicautomotrizoficial')}}>
-                <FacebookIcon className="w6 h-6" />
+        <div className='flex'>
+          <div className='flex flex-row justify-center items-end'>
+            <Image src={sticker_footer} alt='sticker_clinica_automotriz_preferencia' width={200} className='relative -bottom-5 lg:hidden'/>
+            <div className='flex flex-col items-center relative w-36 lg:w-auto right-10 lg:right-0'>
+              <div className="grid grid-cols-2 gap-3 w-24 mb-4 lg:flex lg:mt-6">
+                <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.facebook.com/clinicautomotrizoficial')}}>
+                  <FacebookIcon className="w6 h-6" />
+                </div>
+                <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.tiktok.com/@clinicautomotrizoficial')}}>
+                  <TiktokIcon className="w-6 h-6" />
+                </div>
+                <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.instagram.com/clinicautomotrizoficial')}}>
+                  <InstagramIcon className="w-6 h-6" />
+                </div>
+                <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.linkedin.com/company/clinica-automotriz-sac/')}}>
+                  <LinkedinIcon className="w-6 h-6" />
+                </div>
               </div>
-              <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.tiktok.com/@clinicautomotrizoficial')}}>
-                <TiktokIcon className="w-6 h-6" />
+              <div className='text-[10px] md:text-[11px] mb-5 w-56 lg:flex lg:w-80 text-black flex flex-col lg:flex-row'>
+                <p className='lg:mr-1 '>Copyright ©️ Caleand 2024</p>
+                <p className='hidden lg:block'> - </p>
+                <p>Todos los derechos reservados</p>
               </div>
-              <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.instagram.com/clinicautomotrizoficial')}}>
-                <InstagramIcon className="w-6 h-6" />
-              </div>
-              <div className="flex justify-center items-center cursor-pointer" onClick={()=>{openLink('https://www.linkedin.com/company/clinica-automotriz-sac/')}}>
-                <LinkedinIcon className="w-6 h-6" />
-              </div>
-            </div>
-            <div className='text-sm mb-5 w-56 lg:flex lg:w-80 lg:text-[11px] text-black'>
-              <p className='lg:mr-1 '>Copyright ©️ Caleand 2024 -</p>
-              <p>Todos los derechos reservados</p>
             </div>
           </div>
         </div>

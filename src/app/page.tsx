@@ -1,5 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-// "use client"
 // import { initBotsonic } from './chatbot';
 // import { useEffect } from "react";
 import Header from "@/components/header/Header";

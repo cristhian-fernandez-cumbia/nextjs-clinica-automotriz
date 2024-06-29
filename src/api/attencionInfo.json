@@ -4,7 +4,7 @@
           {
               "idAttention": 1,
               "urlImagen": "/assets/images/sala_clinica_automotriz.png",
-              "urlVideo": "https://player.vimeo.com/video/943953352",
+              "urlVideo": "https://player.vimeo.com/video/966762135",
               "description": "",
               "title": "Sala de espera",
               "subtitle": "Moderna",
@@ -14,7 +14,7 @@
           {
               "idAttention": 2,
               "urlImagen": "/assets/images/atencion_clinica_automotriz.png",
-              "urlVideo": "https://player.vimeo.com/video/943953322",
+              "urlVideo": "https://player.vimeo.com/video/966761207",
               "description": "",
               "title": "Atención",
               "subtitle": "Personalizada",
@@ -24,7 +24,7 @@
           {
               "idAttention": 3,
               "urlImagen": "/assets/images/reportes_clinica_automotriz.png",
-              "urlVideo": "https://player.vimeo.com/video/943953294",
+              "urlVideo": "https://player.vimeo.com/video/966761770",
               "description": "",
               "title": "Reportes",
               "subtitle": "En tiempo real",

@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 import React, { useEffect, useState } from 'react'
 import dataLogos from '@/api/logos.json'
@@ -29,7 +28,6 @@ const ServicesCounter = () => {
     "08:00 - 09:00",
     "09:00 - 10:00",
     "10:00 - 14:00",
-    // "14:00 - 16:00",
     "16:00 - 18:00"
   ]
   
@@ -87,19 +85,19 @@ const ServicesCounter = () => {
 
   return (
     <div className='relative'>
-      <div className='absolute w-full h-40 -top-24 '>
+      <div className='absolute w-full h-24 -top-12 z-10'>
         <div className='absolute inset-0 bg-gradient-to-t from-transparent via-gray-700 to-transparent'></div>
       </div>
 
       {/* <div className='flex justify-center items-center bg-cover bg-center bg-no-repeat relative mb-20' style={{backgroundImage: `url(${dataLogos.data.urlImagen})`, backgroundPosition: 'top'}}> */}
       <div 
-        className='flex justify-center items-center bg-cover bg-center bg-no-repeat relative mb-20 image-container' 
+        className='flex justify-center items-center bg-cover bg-center bg-no-repeat relative mb-10 md:mb-20 image-container' 
         style={{ backgroundImage: `url(${images[currentImage]})`, backgroundPosition: 'top' }}
       >
-        <div className='w-52 h-[850px]'></div>
+        <div className='w-52 h-[250px] sm:h-[350px] md:h-[450px] lg:h-[850px]'></div>
       </div>
-      <div className='absolute w-full h-40 bottom-5'>
-        <div className='absolute inset-0 bg-gradient-to-t from-transparent via-gray-500 to-transparent'></div>
+      <div className='absolute w-full h-24 md:h-36 bottom-6 md:bottom-12 lg:bottom-16 xl:bottom-16 2xl:bottom-2 z-10'>
+        <div className='absolute inset-0 bg-gradient-to-t from-transparent via-gray-700 to-transparent'></div>
       </div>
     </div>
   )

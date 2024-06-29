@@ -12,13 +12,6 @@ interface MaintenanceSearchProps {
 
 const MaintenanceSearch: React.FC<MaintenanceSearchProps> = ({vehiculo}) => {
   const [sticker, setSticker] = useState(sticker_servicio_automotriz);
-  // const addSixMonths = (fecha: string): string => {
-  //   const [day, month, year] = fecha.split('/');
-  //   const newMonth = parseInt(month) + 6;
-  //   const newYear = parseInt(year) + Math.floor(newMonth / 12);
-  //   const formattedMonth = (newMonth % 12 || 12).toString().padStart(2, '0');
-  //   return `${day}/${formattedMonth}/${newYear}`;
-  // };
   const addSixMonths = (fecha: string): string => {
     fecha = fecha.replace(/-/g, '/');
     const [day, month, year] = fecha.split('/');
